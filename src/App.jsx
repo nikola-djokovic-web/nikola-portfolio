@@ -165,14 +165,14 @@ export default function App() {
           <p className="max-w-2xl text-slate-400 leading-relaxed">{t.focus}</p>
           <div className="flex items-center gap-3 text-slate-300">
             <a
-              href="mailto:nikoladokovic.dev@gmail.com"
+              href="mailto:nikoladjokovic90@icloud.com"
               className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400/60 hover:text-cyan-300 transition-colors"
               aria-label="Email"
             >
               <Mail size={18} />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/nikola-djokovic-330"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400/60 hover:text-cyan-300 transition-colors"
@@ -181,7 +181,7 @@ export default function App() {
               <Linkedin size={18} />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/nikola-djokovic-web"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400/60 hover:text-cyan-300 transition-colors"
