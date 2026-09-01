@@ -41,9 +41,9 @@ const content = {
     projectText: {
       1: {
         description:
-          "Application for creating and validating electronic invoices using the XRechnung standard.",
+          "Property management platform for tenant onboarding, lease tracking, rent collection, and maintenance workflows.",
         details:
-          "Implemented PDF visualization and a configuration wizard to automate key workflows.",
+          "Built role-based access, property listings, document management, and AI-assisted listing content for a service-focused rental experience.",
       },
       2: {
         description:
@@ -90,9 +90,9 @@ const content = {
     projectText: {
       1: {
         description:
-          "Aplikacija za kreiranje i validaciju elektronskih faktura po XRechnung standardu.",
+          "Platforma za upravljanje nekretninama sa onboardingom stanara, praćenjem ugovora, naplatom kirija i zahtevima za održavanje.",
         details:
-          "Implementacija PDF vizuelizacije i konfiguracionog wizarda za automatizaciju.",
+          "Razvijen je sistem sa ulogama korisnika, listanjem nekretnina, upravljanjem dokumentima i AI podrškom za optimizaciju naslova i opisa oglasa.",
       },
       2: {
         description:
@@ -295,14 +295,14 @@ function ContactSection({ t }) {
       </p>
       <div className="flex flex-wrap items-center gap-3 pt-2">
         <a
-          href="mailto:nikoladokovic.dev@gmail.com"
+          href="mailto:nikoladokovic90@icloud.com"
           className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-cyan-400/20 text-cyan-200 border border-cyan-400/40 font-semibold hover:bg-cyan-400/30 transition-colors"
         >
           <Mail size={18} />
           {t.sendEmail}
         </a>
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/nikola-djokovic-330"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-200 font-semibold hover:border-cyan-400/60 hover:text-cyan-300 transition-colors"
@@ -373,12 +373,38 @@ function ProjectCard({ project, index }) {
       <span className="text-xs font-bold text-cyan-300 uppercase tracking-widest">
         {project.company}
       </span>
-      <h3 className="text-xl font-bold mt-2 flex items-center justify-between gap-3">
-        {project.title}
-        <ExternalLink
-          className="opacity-0 group-hover:opacity-100 transition-opacity"
-          size={20}
-        />
+      <h3 className="text-xl font-bold mt-2">
+        <div className="flex items-center justify-between gap-3">
+          {project.link ? (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-cyan-300 transition-colors"
+            >
+              {project.title}
+            </a>
+          ) : (
+            <span>{project.title}</span>
+          )}
+
+          {project.link ? (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Open ${project.title}`}
+              className="opacity-0 group-hover:opacity-100 transition-opacity hover:text-cyan-300"
+            >
+              <ExternalLink size={20} />
+            </a>
+          ) : (
+            <ExternalLink
+              className="opacity-0 group-hover:opacity-100 transition-opacity"
+              size={20}
+            />
+          )}
+        </div>
       </h3>
       <p className="text-slate-300 mt-4 text-sm leading-relaxed text-justify">
         {project.description}

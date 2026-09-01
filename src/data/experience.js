@@ -1,11 +1,14 @@
 export const projects = [
   {
     id: 1,
-    title: "eRechnung2Go",
-    company: "ITM Technologies",
-    description: "Aplikacija za kreiranje i validaciju elektronskih faktura po XRechnung standardu.",
-    tags: ["Vue.js", "PrimeVue", "jsPDF", "Copilot"],
-    details: "Implementacija PDF vizuelizacije i konfiguracionog wizarda za automatizaciju."
+    title: "MiNi Property",
+    company: "Property Management App",
+    description:
+      "Property management platform for tenant onboarding, lease tracking, rent collection, and maintenance workflows.",
+    tags: ["React", "Next.js", "Supabase", "AI Features"],
+    details:
+      "Built a modern tenant portal and admin experience with role-based access, property listings, payment workflows, and maintenance request management.",
+    link: "https://mini-property.vercel.app/en/login"
   },
   {
     id: 2,
