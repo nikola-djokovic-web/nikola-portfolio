@@ -6,7 +6,7 @@ import { projects } from "./data/experience";
 const content = {
   en: {
     role: "Frontend Developer",
-    headline: "Nikola Đoković",
+    headline: "Nikola Djokovic",
     intro:
       "I build modern, fast, and clear web applications with a strong focus on UX, component architecture, and long-term maintainability.",
     focus:
